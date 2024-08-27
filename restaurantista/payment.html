@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="./payment.css" />
+    <meta charset="UTF-8" />
+    <title>restaurantista|payment</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#">
+            <img src="./photos/restaurantista-logo.jpg" alt="restaurantista  logo">
+            </a> 
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="home.html">Menu</a></li>
+        
+                </ul>
+                <div class="burger">
+                    <div class="line 1"></div>
+                    <div class="line 2"></div>
+                    <div class="line 3"></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+<form action="" id="payment-form">
+    <label for="name">card holder</label>
+    <input type="text" id="name" name="name"required>
+
+    <label for="card-number">Card Number</label>
+    <input type="text" id="card-number" name="card-number" required pattern="[0-9]{13,16}">
+    
+
+    <label for="cvc">CVC</label>
+<input type="text" id="cvc" name="cvc" required  pattern="[0-9]{3,4}">
+
+
+<label for="expiration-date">Expiration Date:</label>
+<input type="text" id="ecpiration-date" name="expiration-date" placeholder="MM/YY" required >
+
+
+<button type="submit" id="pay-button">Pay</button>
+</form>
+ 
+<div class="success-message" ">
+<p>
+    Thank you for yout payment. Your order will be delivered within 1 hour.
+</p> 
+
+</div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>About Us</h3>
+                    <p>
+                        At our website, we combine food with the convenience of online ordering. With a just few clicks, you can explore our menu, select your favorite dishes, and have them delivered right to your doorstep.
+                    </p>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <p>
+                        123 Main st. <br>
+                        AnyTown, Kosovo 10000 <br>
+                        Email: order@restaurantista.org <br>
+                        Phone: 044-000-000
+                    </p>
+                </div>
+                <div class="footer-column">
+                    <img src="./img/restaurantista-logo.jpg" alt="restaurantista logo" class="footer-logo">
+                    <h3>Follow us</h3>
+                    <div class="social-media-icons">
+                        <a href="https://facebook.com/">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="https://x.com">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                        <a href="https://instagram.com">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <p class="footer-bottom">
+                <i class="fa-regular fa-copyright"></i> 2024 Restaurantista. All right reserved
+            </p>
+        </div>
+    </footer>
+    
+</body>
+</html>

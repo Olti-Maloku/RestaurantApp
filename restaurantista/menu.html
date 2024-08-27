@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurantista | Menu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+    <main>
+        <div id="menu-div" >
+            <img src="./photos/original.jpg" alt="Menu" id="menu-image">
+            <h2>Menu</h2>
+            <select name="menu" id="menu" onchange="updateMenuItems()">
+                <option value="pasta">Pasta</option>
+                <option value="pizza">Pizza</option>
+                <option value="desserts">Desserts</option>
+            </select>
+            <input type="text" id="search" placeholder="Search menu items..." >
+            <ul id="menu-items"></ul>
+        </div>
+        <div>
+            <div id="basket-section">
+                <h2>Add to basket</h2>
+                <ul id="basket-items"></ul>
+                <div id="basket-message" style="display: none;">
+                    Sorry, you can't order yet. Restaurantista has set a minimum amount of 20,00$ (excl. delivery costs)
+                </div>
+                <p>
+                    Subtotal:
+                    <span id="subtotal-price">0.00</span>
+                </p>
+                <p>
+                    TVSH (18%)
+                    <span id="tax-price">0.00</span>
+                </p>
+                <p>
+                    Total:
+                    <span id="totali-price">0.00</span>
+                </p>
+                <button id="checkout">
+                    Pay
+                </button>
+            </div>
+        </div>
+    </main>
+    <div id="footer-placeholder"></div>
+    <script src="menu.js"></script>
+</body>
+</html>

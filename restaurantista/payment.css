@@ -1,0 +1,218 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+header {
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img {
+    height: 80px;
+    width: 80px;
+}
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-links li {
+    margin: 0 10px;
+}
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+.nav-links a:hover {
+    color: #FF8000;
+}
+.burger {
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        background-color: #fff;
+        height: 100vh;
+        top: 0;
+        right: 0;
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(200px);
+        transition: transform 0.3s ease;
+        z-index: 999;
+    }
+    .nav-links ul {
+        flex-direction: column;
+    }
+    .nav-links li {
+        margin: 10px 0;
+    }
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+    .line1,
+    .line2,
+    .line3 {
+        width: 30px;
+        height: 3px;
+        background-color: #333;
+        margin: 5px;
+        transition: all 0.5s ease;
+    }
+    .nav-active {
+        transform: translateX(0);
+    }
+    .line1 {
+        transform: rotate(-45deg) translate(-8px, 8px);
+    }
+    .line2 {
+        opacity: 0;
+    }
+    .line3 {
+        transform: rotate(45deg) translate(-8px, -8px);
+    }
+}
+form{
+    margin-top: 300px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    padding: 30px;
+    margin: 50px auto;
+    margin-top: 150px;
+
+}
+label{
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+input[type='text']{
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%;
+}
+button{
+    background-color: #FF8000;
+    border: none;
+    border-radius: 5px;
+   color: white;  
+   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+   cursor: pointer;
+   font-size: 16px;
+   padding: 10px;
+   width: 100%;
+   transition: 100ms;
+}
+button:hover{
+    background-color: #eb7601;
+}
+p{
+    margin-top: 20px;
+    font-size: 18px;
+    color: black;
+    text-align: center;
+
+}
+.success-message{
+    color: #FF8000;
+    font-weight: 700;
+    display: none;
+}
+
+
+footer {
+    background: #f5f5f5;
+    text-align: center;
+    padding-top: 30px;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.footer-column {
+    padding: 0 20px;
+    margin-bottom: 20px;
+    text-align: left;
+    flex: 1 1 300px;
+}
+.footer-column h3 {
+    color: #ff8000;
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-weight: 800;
+}
+.footer-column p {
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.footer-logo {
+    width: 100px;
+    border-radius: 20%;
+    overflow: hidden;
+}
+.social-media-icons {
+    display: flex;
+}
+.social-media-icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    flex-direction: column;
+    width: 30px;
+    height: 30px;
+    background-color: #fdfdfd;
+    border-radius: 100%;
+    margin-right: 5px;
+    color: #ff8000;
+    text-align: center;
+    transition: 300ms ;
+}
+.social-media-icons a:hover {
+    background-color: #ff8000;
+    color: #fdfdfd;
+}
+.footer-bottom {
+    color: #fff;
+    font-weight: 600;
+    background-color: #ff8000;
+    text-align: center;
+    padding: 30px 0;
+    margin:0 ;
+}
